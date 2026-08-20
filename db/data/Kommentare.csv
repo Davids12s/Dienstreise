@@ -1,0 +1,4 @@
+ID,titel,inhalt,date,dienstreise_ID,createdAt,createdBy,modifiedAt,modifiedBy, autor
+19382112-f9a4-4447-a406-75e2b0d4bdb1,titel-19382112,inhalt-19382112,2009-11-27T23:00:00.000Z,7907346a-801b-46ac-b8d9-42e40bbf5cd0,2022-02-25T23:00:00.000Z,createdBy.bjfc0@example.org,2002-02-11T23:00:00.000Z,modifiedBy.bjfc0@example.com, David Sauhammel
+19382113-51cf-4350-a913-c99f5aa7af9b,titel-19382113,inhalt-19382113,2006-04-03T23:00:00.000Z,7907346a-801b-46ac-b8d9-42e40bbf5cd0,2023-06-15T23:00:00.000Z,createdBy.bjfc1@example.org,2011-01-25T23:00:00.000Z,modifiedBy.bjfc1@example.org, David Sauhammel
+19382114-6534-4876-9c7d-67ea77e011c6,titel-19382114,inhalt-19382114,2022-03-19T23:00:00.000Z,7907346a-801b-46ac-b8d9-42e40bbf5cd0,2006-04-04T23:00:00.000Z,createdBy.bjfc2@example.com,2020-10-25T23:00:00.000Z,modifiedBy.bjfc2@example.org., David Sauhammel

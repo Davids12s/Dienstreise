@@ -1,0 +1,42 @@
+<mvc:View controllerName="project1.controller.View1"
+   xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <headerContent>
+        <Button text="Neue Dienstreise" press="onCreatePress"/>
+    </headerContent>
+        <content>
+            <Table id="tripsTable" items="{/Dienstreisen}">
+                <columns>
+                    <Column>
+                        <Text text="Zielort"/>
+                    </Column>
+                    <Column>
+                        <Text text="Start"/>
+                    </Column>
+                    <Column>
+                        <Text text="Ende"/>
+                    </Column>
+                    <Column>
+                        <Text text="Transportmittel"/>
+                    </Column>
+                    <Column>
+                        <Text text=" Status"/>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem type="Navigation" press="onItemPress">
+                        <cells>
+                            <Text text="{zielort}"/>
+                            <Text text="{startdate}"/>
+                            <Text text="{enddate}"/>
+                            <Text text="{transportmittel}"/>
+                            <Text text= "{status/0/status}"/>
+
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

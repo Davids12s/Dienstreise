@@ -1,0 +1,1 @@
+using AngestelltenService as service from '../../srv/service';

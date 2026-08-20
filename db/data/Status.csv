@@ -1,0 +1,4 @@
+ID,status,date,dienstreise_ID,createdAt,createdBy,modifiedAt,modifiedBy
+23422647-437d-4221-b16c-f379bfacb817,ABGESCHLOSSEN,2019-08-29T23:00:00.000Z,7907346a-801b-46ac-b8d9-42e40bbf5cd0,2011-10-04T23:00:00.000Z,createdBy.dy113@example.org,2000-03-07T23:00:00.000Z,modifiedBy.dy113@example.com
+23422648-538c-4680-9d4d-68f781d52054,GEBUCHT,2006-06-09T23:00:00.000Z,7907346a-801b-46ac-b8d9-42e40bbf5cd0,2006-06-06T23:00:00.000Z,createdBy.dy114@example.org,2007-04-30T23:00:00.000Z,modifiedBy.dy114@example.com
+23422649-fd12-4304-b133-7e0ca2ad4447,STORNIERT,2002-05-13T23:00:00.000Z,7907346a-801b-46ac-b8d9-42e40bbf5cd0,2017-10-26T23:00:00.000Z,createdBy.dy115@example.com,2022-04-15T23:00:00.000Z,modifiedBy.dy115@example.org

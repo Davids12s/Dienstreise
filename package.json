@@ -12,10 +12,14 @@
   },
   "devDependencies": {
     "@cap-js/sqlite": "^2",
-    "@sap/cds-dk": "^9"
+    "@sap/cds-dk": "^9",
+    "cds-plugin-ui5": "^0.17.0"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-dienstreisenapp": "cds watch --open dienstreisenapp/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-dienstreise": "cds watch --open dienstreise/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-project1": "cds watch --open project1/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
   "cds": {
@@ -25,13 +29,19 @@
           "kind": "mocked",
           "users": {
             "Angestellter": {
-              "roles": []
+              "roles": [
+                "Angestellter"
+              ]
             },
             "Backoffice": {
-              "roles": []
+              "roles": [
+                "Backoffice"
+              ]
             },
             "Admin": {
-              "roles": []
+              "roles": [
+                "Admin"
+              ]
             }
           }
         }
@@ -40,5 +50,11 @@
         "auth": "xsuaa"
       }
     }
-  }
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/dienstreisenapp"
+  ]
 }

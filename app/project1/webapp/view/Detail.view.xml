@@ -1,0 +1,113 @@
+<mvc:View controllerName="project1.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+     xmlns:core="sap.ui.core"
+    xmlns:unified="sap.ui.unified"
+    xmlns="sap.m">
+
+    <Page id="detailPage" title="Dienstreise Details" showNavButton="true" navButtonPress="onNavBack">
+        <content>
+            <VBox class="sapUiMediumMargin">
+                <Label text="Zielort"/>
+                <Input id="editZielort" value="{zielort}"/>
+                <Label text="Start"/>
+                <DatePicker
+					id="DP1"
+					placeholder="Enter Date"
+					class="sapUiSmallMarginBottom"
+                    value="{startdate}"/>
+
+               <!-- <Input id="editStartdate" value="{startdate}"/> -->
+                <Label text="Ende"/>
+
+                  <DatePicker
+					id="DP2"
+					placeholder="Enter Date"
+					class="sapUiSmallMarginBottom"
+                    value="{enddate}"/>
+
+               <!-- <Input id="editEnddate" value="{enddate}"/>--> 
+                <Label text="Transportmittel"/>
+                <Select selectedKey="{transportmittel}" change="onTransportmittelChange" >
+                    <core:Item key="AUTO" text="Auto"/>
+                    <core:Item key="ZUG" text="Zug"/>
+                    <core:Item key="FLUGZEUG" text="Flugzeug"/>
+                </Select>
+
+                <Label text= "Status"></Label>
+                <Text text="{status/0/status}"/>
+
+
+
+                <Table id="Kommentare" items="{kommentare}">
+                <columns>
+                    <Column>
+                        <Text text="Titel"/>
+                    </Column>
+                    <Column>
+                        <Text text="Autor"/>
+                    </Column>
+                    <Column>
+                        <Text text="Inhalt"/>
+                    </Column>
+                    <Column>
+                        <Text text="Date"/>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem type="Navigation" press="onItemPress">
+                        <cells>
+                            <Text text="{titel}"/>
+                            <Text text="{autor}"/>
+                            <Text text="{inhalt}"/>
+                            <Text text="{date}"/>
+                        
+
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+
+              <Input id= "addKommentar" placeholder="Kommentar eingeben"></Input>
+            <Button text="Kommentar hinzufügen" press="onAddKommentar">
+            </Button>
+
+
+            <Table id="Attachements" items="{attachments}">
+    <columns>
+        <Column>
+            <Text text="Titel"/>
+        </Column>
+        <Column>
+            <Text text="Typ"/>
+        </Column>
+    </columns>
+    <items>
+        <ColumnListItem>
+            <cells>
+                <Text text="{title}"/>
+                <Text text="{type}"/>
+            </cells>
+        </ColumnListItem>
+    </items>
+</Table>
+
+		<unified:FileUploader
+    id="fileUploader"
+    name="myFileUpload"
+    tooltip="Datei auswählen"/>
+<Button
+    text="Datei hochladen"
+    press="onUploadPress"/>
+
+    <Button text="Bestätigen" press="onNavBack"></Button>
+
+
+           
+            </VBox>
+
+
+
+        
+        </content>
+    </Page>
+</mvc:View>
