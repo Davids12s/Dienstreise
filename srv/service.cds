@@ -21,3 +21,4 @@ service AdminService {
    entity Dienstreisen as projection on DienstreisenDb;
     entity Status as projection on StatusDb;
 }
+
